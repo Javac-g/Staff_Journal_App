@@ -17,4 +17,16 @@ public class Data {
     public Integer getSalary() {
         return salary;
     }
+
+    public void setPosition(String position) {
+        this.position = position;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setSalary(Integer salary) {
+        this.salary = salary;
+    }
 }
