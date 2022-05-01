@@ -47,5 +47,27 @@ public class Model {
 
     }
 
+    Integer delete (String name){
+
+        int indexToRemove = -1;
+
+        for (int i = 0; i <datalist.size();i++){
+
+            if(datalist.get(i).equals(name)){
+
+                indexToRemove = i;
+
+            }
+
+        }
+        if(indexToRemove != -1){
+
+            datalist.remove(indexToRemove);
+
+        }
+        return indexToRemove;
+
+    }
+
 
 }
