@@ -51,9 +51,9 @@ public class Model {
 
         int indexToRemove = -1;
 
-        for (int i = 0; i <datalist.size();i++){
+        for (int i = 0; i < datalist.size(); i++){
 
-            if(datalist.get(i).equals(name)){
+            if(datalist.get(i).getName().equals(name)){
 
                 indexToRemove = i;
 
