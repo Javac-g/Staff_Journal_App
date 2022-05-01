@@ -7,18 +7,18 @@ import java.util.Scanner;
 public class View {
     private final static Scanner scanner = new Scanner(System.in);
 
-    Integer readCommand(){
+    public Integer readCommand(){
 
         return scanner.nextInt();
 
     }
-    void printMessage(String msg){
+    public void printMessage(String msg){
 
         System.out.println(msg);
 
     }
 
-    void printMenu(){
+    public void printMenu(){
         System.out.println("Please choose command: ");
         System.out.println("1 - Add person");
         System.out.println("2 - Find person");
@@ -27,7 +27,7 @@ public class View {
         System.out.println("5 - Exit");
     }
 
-    void printData(Data data){
+    public void printData(Data data){
 
         System.out.println("Name: " + data.getName());
         System.out.println("Position: " + data.getPosition());
@@ -35,17 +35,17 @@ public class View {
 
     }
     // local variables inlined
-    String addName(){
+    public String addName(){
         System.out.println("Enter name: ");
         return scanner.next();
     }
-    String addPosition(){
+    public String addPosition(){
         System.out.println("Enter position: ");
         return scanner.next();
 
     }
 
-    Integer addSalary(){
+    public Integer addSalary(){
         System.out.println("Enter salary: ");
         return scanner.nextInt();
     }

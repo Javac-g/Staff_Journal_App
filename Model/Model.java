@@ -7,9 +7,9 @@ import java.util.List;
 
 public class Model {
 
-    List<Data> datalist = new ArrayList<>();
+    public List<Data> datalist = new ArrayList<>();
 
-    void create(String name,String position, Integer salary){
+    public void create(String name,String position, Integer salary){
 
         Data data = new Data();
         data.setName(name);
@@ -19,7 +19,7 @@ public class Model {
 
     }
 
-    Data read(String name){
+    public Data read(String name){
 
         for(Data search : datalist){
             if(search.getName().equals(name)){
@@ -32,7 +32,7 @@ public class Model {
 
     }
 
-    Data Update(String oldName,String newName,String newPosition, Integer newSalary){
+    public Data Update(String oldName,String newName,String newPosition, Integer newSalary){
         Data result = read(oldName);
 
         if(result != null){
@@ -47,7 +47,7 @@ public class Model {
 
     }
 
-    Integer delete (String name){
+    public Integer delete (String name){
 
         int indexToRemove = -1;
 
