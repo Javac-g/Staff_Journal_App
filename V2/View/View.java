@@ -26,7 +26,11 @@ public class View {
         Integer id = scanner.nextInt();
         return id;
     }
-    public Integer
+    public Integer addSalary(){
+        System.out.println("Enter salary: ");
+        Integer salary = scanner.nextInt();
+        return salary;
+    }
 
 
 }
