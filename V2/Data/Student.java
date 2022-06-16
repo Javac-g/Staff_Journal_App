@@ -1,8 +1,8 @@
 package V2.Data;
 
 public class Student {
-    String name,position,salary;
-    Integer id;
+    String name,position;
+    Integer id,salary;
 
     public String getName() {
         return name;
@@ -20,11 +20,11 @@ public class Student {
         this.position = position;
     }
 
-    public String getSalary() {
+    public Integer getSalary() {
         return salary;
     }
 
-    public void setSalary(String salary) {
+    public void setSalary(Integer salary) {
         this.salary = salary;
     }
 
