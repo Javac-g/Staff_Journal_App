@@ -27,5 +27,16 @@ public class Model {
         }
         return null;
     }
+    public Student update(Integer idForSearch,String newName, String newPosition, Integer newId,Integer newSalary){
+        Student student = read(idForSearch);
+        if (student != null){
+            student.setName(newName);
+            student.setPosition(newPosition);
+            student.setSalary(newSalary);
+            student.setId(newId);
+            return student;
+        }
+        return null;
+    }
 
 }
