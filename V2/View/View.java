@@ -44,7 +44,14 @@ public class View {
         System.out.println("ID: " + student.getId());
         System.out.println("Salary: " + student.getSalary());
     }
-    public void printMenu()
+    public void printMenu(){
+        System.out.println("Menu:");
+        System.out.println("1 - add student");
+        System.out.println("2 - find student");
+        System.out.println("3 - update student");
+        System.out.println("4 - delete student");
+        System.out.println("5 - exit");
+    }
 
 
 
