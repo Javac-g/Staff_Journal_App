@@ -21,5 +21,12 @@ public class View {
         return position;
     }
 
+    public Integer addId(){
+        System.out.println("Enter id: ");
+        Integer id = scanner.nextInt();
+        return id;
+    }
+    public Integer
+
 
 }
