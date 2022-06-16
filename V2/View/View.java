@@ -1,5 +1,7 @@
 package V2.View;
 
+import V2.Data.Student;
+
 import java.util.Scanner;
 
 public class View {
@@ -31,6 +33,19 @@ public class View {
         Integer salary = scanner.nextInt();
         return salary;
     }
+
+    public void printMesage(String msg){
+        System.out.println(msg);
+
+    }
+    public void printData(Student student){
+        System.out.println("Name: " + student.getName());
+        System.out.println("Position: " + student.getPosition());
+        System.out.println("ID: " + student.getId());
+        System.out.println("Salary: " + student.getSalary());
+    }
+    public void printMenu()
+
 
 
 }
