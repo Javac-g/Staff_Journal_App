@@ -15,6 +15,11 @@ public class View {
         String name = scanner.next();
         return name;
     }
+    public String addPosition(){
+        System.out.println("Enter position: ");
+        String position = scanner.next();
+        return position;
+    }
 
 
 }
