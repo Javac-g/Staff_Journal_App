@@ -10,5 +10,10 @@ public class View {
         Integer command = scanner.nextInt();
         return command;
     }
+    public String addName(){
+        System.out.println("Enter name: ");
+        String name = scanner.next();
+        return name;
+    }
 
 }
