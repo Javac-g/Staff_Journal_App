@@ -1,4 +1,6 @@
-import Controller.Controller;
+package V1;
+
+import V1.Controller.Controller;
 
 public class App {
 

@@ -1,8 +1,8 @@
-package Controller;
+package V1.Controller;
 
-import Data.Data;
-import Model.Model;
-import View.View;
+import V1.Data.Data;
+import V1.Model.Model;
+import V1.View.View;
 
 public class Controller {
 

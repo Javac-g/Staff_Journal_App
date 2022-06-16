@@ -1,6 +1,6 @@
-package View;
+package V1.View;
 
-import Data.Data;
+import V1.Data.Data;
 
 import java.util.Scanner;
 
