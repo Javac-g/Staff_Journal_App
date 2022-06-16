@@ -39,4 +39,20 @@ public class Model {
         return null;
     }
 
+    public Integer delete(Integer id){
+        int inToRem = -1;
+
+        for (int i = 0; i < datalist.size() ; i ++){
+            if (datalist.get(i).getId().equals(id)){
+                inToRem = i;
+            }
+        }
+        if (inToRem != -1){
+
+            datalist.remove(inToRem);
+            return inToRem;
+        }
+        return null;
+    }
+
 }
