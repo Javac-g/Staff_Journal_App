@@ -19,5 +19,13 @@ public class Model {
         datalist.add(student);
         return student;
     }
+    public Student read(Integer id){
+        for (Student x : datalist){
+            if (x.getId().equals(id)){
+                return x;
+            }
+        }
+        return null;
+    }
 
 }
