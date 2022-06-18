@@ -1,5 +1,7 @@
 package V3.View;
 
+import V3.Data.Person;
+
 import java.util.Scanner;
 
 public class View {
@@ -20,7 +22,11 @@ public class View {
         System.out.println("4 - delete person");
         System.out.println("5 - exit");
     }
-    public void printData()
+    public void printData(Person person){
+        System.out.println("Name: " + person.getName());
+        System.out.println("Position: " + person.getPosition());
+        System.out.println("Id: " + person.getId());
+    }
 
 
 
