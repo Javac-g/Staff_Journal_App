@@ -1,5 +1,6 @@
 package V3.Controller;
 
+import V3.Data.Person;
 import V3.Model.Model;
 import V3.View.View;
 
@@ -24,7 +25,14 @@ public class Controller {
                     model.create(view.addName(), view.addPosition(), view.addId());
                     view.printMessage("done");
 
-
+                case 2:
+                    view.printMessage("Enter id to find person: ");
+                    Person finded = model.read(view.addId());
+                    if (finded != null){
+                        view.printData(finded);
+                    }else {
+                        view.printMessage("Nobody finded");
+                    }
             }
 
         }
