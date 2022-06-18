@@ -57,7 +57,9 @@ public class Controller {
                         view.printMessage("Nobody will deleted");
                     }
                 case 5:
+
                     break;
+
                 default:
                     view.printMessage("Wrong command");
             }
