@@ -46,6 +46,8 @@ public class Controller {
                         view.printMessage("Nothing up to date");
                         break;
                     }
+                case 5:
+                    break;
             }
 
         }
