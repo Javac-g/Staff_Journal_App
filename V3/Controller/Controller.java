@@ -58,6 +58,8 @@ public class Controller {
                     }
                 case 5:
                     break;
+                default:
+                    view.printMessage("Wrong command");
             }
 
         }
