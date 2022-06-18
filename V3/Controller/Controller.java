@@ -46,6 +46,16 @@ public class Controller {
                         view.printMessage("Nothing up to date");
                         break;
                     }
+                case 4:
+                    view.printMessage("Enter id of person to delete");
+                    Integer index = model.delete(view.addId());
+
+
+                    if (index != -1){
+                        view.printMessage("Was deleted " + index + " person");
+                    }else {
+                        view.printMessage("Nobody will deleted");
+                    }
                 case 5:
                     break;
             }
