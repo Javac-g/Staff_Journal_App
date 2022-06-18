@@ -12,6 +12,15 @@ public class View {
 
     }
 
+    public void printMenu(){
+        System.out.println("Menu");
+        System.out.println("1 - add person");
+        System.out.println("2 - find person");
+        System.out.println("3 - update person");
+        System.out.println("4 - delete person");
+        System.out.println("5 - exit");
+    }
+
 
 
 }
