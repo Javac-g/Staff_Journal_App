@@ -26,4 +26,14 @@ public class Model {
         }
         return null;
     }
+    public Person update(Integer id,String n, String p,Integer setId){
+        Person person = read(id);
+        if (person != null){
+            person.setName(n);
+            person.setPosition(p);
+            person.setId(setId);
+            return person;
+        }
+        return null;
+    }
 }
