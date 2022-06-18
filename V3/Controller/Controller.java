@@ -24,14 +24,27 @@ public class Controller {
                     view.printMessage("Enter person data:");
                     model.create(view.addName(), view.addPosition(), view.addId());
                     view.printMessage("done");
+                    break;
 
                 case 2:
                     view.printMessage("Enter id to find person: ");
                     Person finded = model.read(view.addId());
                     if (finded != null){
                         view.printData(finded);
+                        break;
                     }else {
                         view.printMessage("Nobody finded");
+                        break;
+                    }
+                case 3:
+                    view.printMessage("Update person:");
+                    Person updated = model.update(view.addId(), view.addName(), view.addPosition(), view.addId());
+                    if (updated != null){
+                        view.printData(updated);
+                        break;
+                    }else {
+                        view.printMessage("Nothing up to date");
+                        break;
                     }
             }
 
