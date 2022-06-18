@@ -27,6 +27,11 @@ public class View {
         System.out.println("Position: " + person.getPosition());
         System.out.println("Id: " + person.getId());
     }
+    public Integer readCommand(){
+        System.out.println("Your choose: ");
+        Integer command = scanner.nextInt();
+        return command;
+    }
 
 
 
