@@ -20,6 +20,7 @@ public class View {
         System.out.println("4 - delete person");
         System.out.println("5 - exit");
     }
+    public void printData()
 
 
 
