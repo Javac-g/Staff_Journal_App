@@ -42,6 +42,11 @@ public class View {
         String position = scanner.next();
         return position;
     }
+    public Integer addId(){
+        System.out.println("Enter id: ");
+        Integer id = scanner.nextInt();
+        return id;
+    }
 
 
 
